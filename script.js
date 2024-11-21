@@ -2,7 +2,7 @@
 async function searchMovie() {
     const movieName = document.getElementById('movieName').value;
     const apiKey = '61621865';
-    const url = `http://www.omdbapi.com/?t=${movieName}&apikey=${apiKey}`;
+    const url = `https://www.omdbapi.com/?t=${movieName}&apikey=${apiKey}`;
 
     const response = await fetch(url);
     const movie = await response.json();
